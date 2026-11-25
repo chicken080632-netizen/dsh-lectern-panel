@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "幻灯片编辑器 (dsh-lectern-panel)",
+    "description": "在左侧栏给 HTML 幻灯片起一个可视化编辑器：选目录、列 deck、起停本地 Lectern 服务，点一下就在浏览器里拖动、改字、Ctrl+S 写回原文件，不用再叫 agent 重跑。",
+    "detail": "DETAIL.md"
+  }
+}

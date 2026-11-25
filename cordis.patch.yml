@@ -1,0 +1,5 @@
+# dsh-lectern-panel：一个包同时提供 Host 半片（管 lectern 进程 + /lectern 路由）
+# 与浏览器半片（左侧栏入口 + 面板）。
+- insert:
+    - id: lectern
+      name: 'dsh-lectern-panel'

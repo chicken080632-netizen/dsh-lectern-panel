@@ -1,0 +1,71 @@
+{
+  "name": "dsh-lectern-panel",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness sidebar panel that launches the Lectern visual editor for AI-generated HTML slide decks: pick a folder, list decks, start and stop the local editor, then drag, retype and save straight back into the file.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "deepseek-harness",
+    "cordis",
+    "lectern",
+    "html",
+    "slides",
+    "deck",
+    "presentation",
+    "editor"
+  ],
+  "type": "module",
+  "main": "src/host.js",
+  "exports": {
+    ".": "./src/host.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "client.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "DETAIL.md",
+    "DETAIL_en.md",
+    "README.md",
+    "LICENSE",
+    "THIRD-PARTY-NOTICES.md"
+  ],
+  "dependencies": {
+    "lectern-editor": "^2.4.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "chicken080632-netizen <chicken.080632@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicken080632-netizen/dsh-lectern-panel.git"
+  },
+  "homepage": "https://github.com/chicken080632-netizen/dsh-lectern-panel#readme",
+  "bugs": {
+    "url": "https://github.com/chicken080632-netizen/dsh-lectern-panel/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

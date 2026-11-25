@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Deck editor (dsh-lectern-panel)",
+    "description": "Starts the local Lectern visual editor for HTML slide decks from the sidebar: pick a folder, list decks, start and stop the server, then edit slides in the browser and save straight back into the file.",
+    "detail": "DETAIL_en.md"
+  }
+}
